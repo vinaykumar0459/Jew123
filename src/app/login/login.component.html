@@ -1,0 +1,26 @@
+<div class="row login-main">
+  <div class="container">
+    <div class="login-box-col col-sm-4 col-sm-offset-4 col-xs-12">
+      <form name="loginform" #login="ngForm" (ngSubmit)="loginform(User)" novalidate>
+        <div class="login-block">
+            <img routerLink="/" src="../../assets/images/jewlogo.png">
+            <input type="text" name="email" id="username" [(ngModel)]="User.email"  #email="ngModel" placeholder="Enter your Email ID" required/>
+            <input type="password" name="password" id="password" [(ngModel)]="User.password"  #password="ngModel" placeholder="Enter your Password" required />
+            <button type="submit">Submit</button>
+        </div>
+        <div class="reg_links">
+          <p>
+            <span>
+              <a routerLink="/forgot-password">Lost your password</a>
+            </span>
+          </p>
+        </div>
+        <div class="back_links">
+            <p>
+              <a routerLink="/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back to Homepage</a>
+            </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
