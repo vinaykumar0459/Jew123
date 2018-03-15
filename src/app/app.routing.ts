@@ -8,14 +8,14 @@ import { PartyCreationComponent } from './home/human-resource/party-creation/par
 import { CompanyCreationComponent } from './home/human-resource/company-creation/company-creation.component';
 
 const appRoutes: Routes = [
-    { path: '', component: HomepageComponent, 
+    { path: 'home', component: HomepageComponent, 
     children: [
       { path: '', component: CompanyCreationComponent },
       { path: 'employ-creation', component: EmployCreationComponent },
       { path: 'party-creation', component: PartyCreationComponent }
     ]
     },
-    { path: 'login', component: LoginComponent },
+    { path: '', component: LoginComponent },
     { path: 'forgot-password', component: ForgotPasswordComponent}
   ];
 
