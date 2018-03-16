@@ -10,6 +10,7 @@ export class CompanyCreationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
