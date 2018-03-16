@@ -10,7 +10,8 @@ import { CompanyCreationComponent } from './home/human-resource/company-creation
 const appRoutes: Routes = [
     { path: 'home', component: HomepageComponent, 
     children: [
-      { path: '', component: CompanyCreationComponent },
+      { path: '', redirectTo: 'company-creation', pathMatch: 'full' },
+      { path: 'company-creation', component: CompanyCreationComponent },
       { path: 'employ-creation', component: EmployCreationComponent },
       { path: 'party-creation', component: PartyCreationComponent }
     ]
