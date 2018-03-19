@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class CompanyCreationComponent implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit() {
-    
+  //   document.getElementById("uploadBtn").onchange = function () {
+  //     document.getElementById("uploadFile").value = this.value.substring(12);
+  // };
   }
 
 }

@@ -56,7 +56,15 @@
           <div class="col-sm-4">
             <div class="form-group">
               <label for="photo">Photo</label>
-              <input type="file" name="fileToUpload" id="fileToUpload">
+              <div class="input-group">
+                <input id="uploadFile" class="form-control" placeholder="Choose File" disabled="disabled">
+                <div class="input-group-btn">
+                  <div class="fileUpload btn btn-success">
+                    <span><i class="glyphicon glyphicon-upload"></i> Upload</span>
+                    <input id="uploadBtn" type="file" class="upload" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-sm-4">
@@ -71,44 +79,6 @@
           <button type="submit" class="submit_btn">Save</button>
         </div>
       </form>
-      <table class="table table-bordered table_main">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Short Name</th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">GST No</th>
-            <th scope="col">Address</th>
-            <th scope="col">Logo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry the Bird</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </div>
   
