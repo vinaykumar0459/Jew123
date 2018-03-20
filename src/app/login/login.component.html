@@ -6,7 +6,7 @@
             <img routerLink="/" src="../../assets/images/jewlogo.png">
             <input type="text" name="email" id="username" [(ngModel)]="User.email"  #email="ngModel" placeholder="Enter your Email ID" required/>
             <input type="password" name="password" id="password" [(ngModel)]="User.password"  #password="ngModel" placeholder="Enter your Password" required />
-            <button type="submit">Submit</button>
+            <button type="submit" routerLink="/dashboard/human-resource/">Submit</button>
         </div>
         <div class="reg_links">
           <p>

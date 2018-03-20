@@ -6,37 +6,37 @@
       <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
           <div class="menu-list">
               <ul id="menu-content" class="menu-content collapse out">
-                  <li data-toggle="collapse" data-target="#humanresource" class="collapsed active">
+                  <li data-toggle="collapse" data-target="#humanresource" class="collapsed active" >
                     <a><i class="fa fa-users fa-lg"></i>Human Resource <span class="arrow"></span></a>
                   </li>
                   <ul class="sub-menu collapse in" id="humanresource">
-                      <li [routerLink]="['/dashboard/human-resource/employ-creation']" routerLinkActive="active"><a>Employee Creation</a></li>
+                      <li [routerLink]="['/dashboard/human-resource/company-creation']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a>Company Creation</a></li>                    
+                      <li [routerLink]="['/dashboard/human-resource/employ-creation']" routerLinkActive="active" ><a>Employee Creation</a></li>
                       <li [routerLink]="['/dashboard/human-resource/party-creation']" routerLinkActive="active"><a>Party Creation</a></li>
-                      <li [routerLink]="['/dashboard/human-resource/company-creation']" routerLinkActive="active"><a>Company Creation</a></li>
                   </ul>
-                  <li data-toggle="collapse" data-target="#itemcreation" class="collapsed">
+                  <li data-toggle="collapse" data-target="#itemcreation" class="collapsed active">
                     <a><i class="fa fa-edit fa-lg"></i> Item Creation <span class="arrow"></span></a>
                   </li>  
                   <ul class="sub-menu collapse" id="itemcreation">
-                    <li [routerLink]="['/dashboard/item-creations/main-group-creation']" routerLinkActive="active"><a>Main Group Creation</a></li>
+                    <li [routerLink]="['/dashboard/item-creations/main-group-creation']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a>Main Group Creation</a></li>
                     <li [routerLink]="['/dashboard/item-creations/sub-group-creation']" routerLinkActive="active"><a>Sub Group Creation</a></li>
                     <li [routerLink]="['/dashboard/item-creations/item-creation']" routerLinkActive="active"><a>Item Creation</a></li>
                     <li [routerLink]="['/dashboard/item-creations/size-length-creation']" routerLinkActive="active"><a>Size/Length Creation</a></li>
                     <li [routerLink]="['/dashboard/item-creations/wastage-mc-creation']" routerLinkActive="active"><a>Wastage/MC Creation</a></li>
                   </ul>
-                  <li data-toggle="collapse" data-target="#mastercreation" class="collapsed">
+                  <li data-toggle="collapse" data-target="#mastercreation" class="collapsed active">
                       <a ><i class="fa fa-user-secret fa-lg"></i> Master Creation <span class="arrow"></span></a>
                   </li>  
                   <ul class="sub-menu collapse" id="mastercreation">
-                    <li [routerLink]="['/dashboard/master-creation/purity-creation']" routerLinkActive="active"><a>purity Creation</a></li>
+                    <li [routerLink]="['/dashboard/master-creation/purity-creation']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a>purity Creation</a></li>
                     <li [routerLink]="['/dashboard/master-creation/rate-creation']" routerLinkActive="active"><a>Rate Creation</a></li>
                     <li [routerLink]="['/dashboard/master-creation/counter-creation']" routerLinkActive="active"><a>Counter Creation</a></li>
                   </ul>
-                  <li data-toggle="collapse" data-target="#createdlist" class="collapsed">
+                  <li data-toggle="collapse" data-target="#createdlist" class="collapsed active">
                     <a ><i class="fa fa-list-ul fa-lg"></i> Created List <span class="arrow"></span></a>
                   </li>  
                   <ul class="sub-menu collapse" id="createdlist">
-                    <li [routerLink]="['/dashboard/created-list/human-resources']" routerLinkActive="active"><a>Human Resources</a></li>
+                    <li [routerLink]="['/dashboard/created-list/human-resources']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a>Human Resources</a></li>
                     <li [routerLink]="['/dashboard/created-list/items']" routerLinkActive="active"><a>Items</a></li>
                     <li [routerLink]="['/dashboard/created-list/wastage']" routerLinkActive="active"><a>Wastage</a></li>
                     <li [routerLink]="['/dashboard/created-list/masters']" routerLinkActive="active"><a>Masters</a></li>
